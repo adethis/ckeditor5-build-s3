@@ -1,0 +1,72 @@
+{
+  "name": "ckeditor5-build-s3",
+  "version": "1.0.0",
+  "description": "ckeditor custom build with s3upload",
+  "main": "./build/ckeditor.js",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^34.2.0",
+    "@ckeditor/ckeditor5-alignment": "^34.2.0",
+    "@ckeditor/ckeditor5-autoformat": "^34.2.0",
+    "@ckeditor/ckeditor5-basic-styles": "^34.2.0",
+    "@ckeditor/ckeditor5-block-quote": "^34.2.0",
+    "@ckeditor/ckeditor5-ckbox": "^34.2.0",
+    "@ckeditor/ckeditor5-ckfinder": "^34.2.0",
+    "@ckeditor/ckeditor5-cloud-services": "^34.2.0",
+    "@ckeditor/ckeditor5-easy-image": "^34.2.0",
+    "@ckeditor/ckeditor5-editor-classic": "^34.2.0",
+    "@ckeditor/ckeditor5-essentials": "^34.2.0",
+    "@ckeditor/ckeditor5-heading": "^34.2.0",
+    "@ckeditor/ckeditor5-image": "^34.2.0",
+    "@ckeditor/ckeditor5-indent": "^34.2.0",
+    "@ckeditor/ckeditor5-link": "^34.2.0",
+    "@ckeditor/ckeditor5-list": "^34.2.0",
+    "@ckeditor/ckeditor5-media-embed": "^34.2.0",
+    "@ckeditor/ckeditor5-paragraph": "^34.2.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^34.2.0",
+    "@ckeditor/ckeditor5-table": "^34.2.0",
+    "@ckeditor/ckeditor5-typing": "^34.2.0"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-core": "^34.2.0",
+    "@ckeditor/ckeditor5-dev-utils": "^30.0.0",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^30.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^34.2.0",
+    "@ckeditor/ckeditor5-upload": "^34.2.0",
+    "css-loader": "^5.2.7",
+    "postcss-loader": "^4.3.0",
+    "raw-loader": "^4.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=5.7.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "preversion": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adethis/ckeditor5-build-s3.git"
+  },
+  "keywords": [
+    "ckeditor5",
+    "custom",
+    "build",
+    "with",
+    "s3upload"
+  ],
+  "author": "adethis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adethis/ckeditor5-build-s3/issues"
+  },
+  "homepage": "https://github.com/adethis/ckeditor5-build-s3#readme"
+}
